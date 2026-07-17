@@ -1,0 +1,26 @@
+export function RabbitLogo({ size = 28, className = '' }: { size?: number; className?: string }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 64 64"
+      fill="none"
+      className={className}
+      aria-hidden="true"
+    >
+      {/* quick rabbit mark on a sticker-yellow tag */}
+      <rect x="4" y="10" width="56" height="44" rx="10" fill="#facc15" />
+      <circle cx="14" cy="32" r="3" fill="#0a0a0a" opacity="0.25" />
+      <path
+        d="M34 22c-1-5 1-10 3-12 1.6 2.4 2.6 6.8 2 11m4.5-10.5C41 13 39.5 17.5 38.8 21"
+        stroke="#0a0a0a"
+        strokeWidth="3.4"
+        strokeLinecap="round"
+      />
+      <ellipse cx="38" cy="33" rx="12" ry="10" fill="#0a0a0a" />
+      <circle cx="42.5" cy="30.5" r="1.8" fill="#facc15" />
+      <path d="M26 38c-4 1.5-6.5 4-7 7" stroke="#0a0a0a" strokeWidth="3.4" strokeLinecap="round" />
+      <circle cx="24" cy="42" r="3.6" fill="#0a0a0a" />
+    </svg>
+  )
+}
